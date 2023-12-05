@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TelaLogin.Views.Cadastro.CadastrarView">
+    <StackLayout VerticalOptions="Center" Padding="20">
+
+        <!-- Espaço para o logotipo -->
+        <Image Source="logo_1.png" VerticalOptions="CenterAndExpand" Margin="40"/>
+
+        <!-- Espaço em branco no topo para ajustar a posição da imagem -->
+        <BoxView HeightRequest="50" Color="Transparent" />
+
+        <!-- Caixa de texto e label para E-Mail -->
+        <StackLayout Spacing="5">
+            <Label Text="Email:" TextColor="Black" FontAttributes="Bold" Margin="26, 0, 0, 0"/>
+            <Border Stroke="Pink"
+                StrokeThickness="0"
+                WidthRequest="300"
+                HeightRequest="33"
+                Margin="0, 0, 0, 0"
+                HorizontalOptions="Center">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10" />
+                </Border.StrokeShape>
+                <Entry BackgroundColor="White" Text ="{Binding Nome}" FontSize="13" HeightRequest="34" WidthRequest="300"/>
+            </Border>
+        </StackLayout>
+
+        <!-- Espaço em branco no topo para ajustar a posição da imagem -->
+        <BoxView HeightRequest="15" Color="Transparent" />
+        <!-- Caixa de texto e label para Senha -->
+        <StackLayout Spacing="5">
+            <Label Text="CPF:" TextColor="Black" FontAttributes="Bold" Margin="26, 0, 0, 0"/>
+            <Border Stroke="Pink"
+                StrokeThickness="0"
+                WidthRequest="300"
+                HeightRequest="33"
+                Margin="0, 0, 0, 0"
+                HorizontalOptions="Center">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10" />
+                </Border.StrokeShape>
+                <Entry BackgroundColor="White" Text="{Binding Cpf}" FontSize="13" HeightRequest="34" MaxLength="11" />
+            </Border>
+        </StackLayout>
+        <BoxView HeightRequest="15" Color="Transparent" />
+        <!-- Caixa de texto e label para Senha -->
+        <StackLayout Spacing="5">
+            <Label Text="Senha:" TextColor="Black" FontAttributes="Bold" Margin="26, 0, 0, 0"/>
+            <Border Stroke="Pink"
+                StrokeThickness="0"
+                WidthRequest="300"
+                HeightRequest="33"
+                Margin="0, 0, 0, 0"
+                HorizontalOptions="Center">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10" />
+                </Border.StrokeShape>
+                <Entry IsPassword="True" BackgroundColor="White" Text="{Binding Senha}" FontSize="13" HeightRequest="34" />
+            </Border>
+        </StackLayout>
+
+
+        <!-- Espaço em branco no topo para ajustar a posição da imagem -->
+        <BoxView HeightRequest="40" Color="Transparent" />
+
+        <!-- Botão de Login -->
+        <Button Text="Concluir Cadastro" FontAttributes="Bold" BackgroundColor="#0D393F" Command="{Binding RegistrarCommand}" TextColor="White" CornerRadius="20" WidthRequest="300"/>
+        <!-- Espaço em branco no topo para ajustar a posição da imagem -->
+
+        <StackLayout Spacing="5" HorizontalOptions="Center" Margin="15">
+            <Label Text="Já possui conta?" TextColor="Black" FontAttributes="Bold" Margin="0, 0, 0, 0" />
+            <Label Text="Entrar" HorizontalOptions="Center" TextColor="#039298" Opacity="0.8" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLabelClicked" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

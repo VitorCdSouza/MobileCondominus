@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TelaLogin.Views.Dependentes.DependenteView"
+             Title="Dependente">
+    <StackLayout>
+        <StackLayout HeightRequest="607">
+            <ScrollView HeightRequest="607">
+
+                <ListView x:Name="listView" HasUnevenRows="True" ItemsSource="{Binding Dependentes}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="10" Spacing="10">
+                                    <Label TextColor="Black">
+                                        <Label.FormattedText >
+                                            <FormattedString >
+                                                <!-- Nome do visitante-->
+                                                <Span  FontSize="Medium" FontAttributes="Bold"  Text="Nome: " />
+                                                <Span FontSize="Small" Text="{Binding NomeDependenteDTO}" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <StackLayout Orientation="Horizontal" Spacing="48">
+                                        <Label TextColor="Black">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <!-- Titulo?-->
+                                                    <Span  FontSize="Medium" FontAttributes="Bold"  Text="Cpf: " />
+                                                    <Span Text="{Binding CpfDependenteDTO}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Spacing="57" Background="Transparent" HeightRequest="70" HorizontalOptions="Center">
+            <!-- Botão de Excluir Reserva -->
+            <Button Text="Excluir"  BorderWidth="1" BorderColor="#039298" FontAttributes="Bold" BackgroundColor="white" Command="{Binding AutenticarCommand}" TextColor="black" HorizontalOptions="Start"  CornerRadius="20" WidthRequest="150" HeightRequest="45"/>
+
+            <!-- Espaço em branco no topo para ajustar a posição da imagem -->
+            <!-- Botão de Adcionar -->
+            <Button Text="Adicionar" FontAttributes="Bold"  Pressed="OnButtonClicked" TextColor="black" HorizontalOptions="End" BackgroundColor="white" BorderWidth="1"  BorderColor="#039298" CornerRadius="20" HeightRequest="45" WidthRequest="150"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

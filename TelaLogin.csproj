@@ -1,0 +1,137 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
+		<OutputType>Exe</OutputType>
+		<RootNamespace>TelaLogin</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Display name -->
+		<ApplicationTitle>TelaLogin</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.telalogin</ApplicationId>
+		<ApplicationIdGuid>73c90683-b510-4a63-aa92-ce5475afc23c</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\logo.svg" Color="#039298" BaseSize="64,64" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\logo.svg" Color="#039298" BaseSize="64,64" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="258,208" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <AndroidResource Remove="Services\NovaPasta1\**" />
+	  <AndroidResource Remove="Services\NovaPasta2\**" />
+	  <AndroidResource Remove="Services\NovaPasta\**" />
+	  <Compile Remove="Services\NovaPasta1\**" />
+	  <Compile Remove="Services\NovaPasta2\**" />
+	  <Compile Remove="Services\NovaPasta\**" />
+	  <EmbeddedResource Remove="Services\NovaPasta1\**" />
+	  <EmbeddedResource Remove="Services\NovaPasta2\**" />
+	  <EmbeddedResource Remove="Services\NovaPasta\**" />
+	  <MauiCss Remove="Services\NovaPasta1\**" />
+	  <MauiCss Remove="Services\NovaPasta2\**" />
+	  <MauiCss Remove="Services\NovaPasta\**" />
+	  <MauiXaml Remove="Services\NovaPasta1\**" />
+	  <MauiXaml Remove="Services\NovaPasta2\**" />
+	  <MauiXaml Remove="Services\NovaPasta\**" />
+	  <None Remove="Services\NovaPasta1\**" />
+	  <None Remove="Services\NovaPasta2\**" />
+	  <None Remove="Services\NovaPasta\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\MerriweatherSans-Bold.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-BoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-ExtraBold.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-ExtraBoldItalic.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-Italic.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-Light.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-LightItalic.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-Medium.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-MediumItalic.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-Regular.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-SemiBold.ttf" />
+	  <None Remove="Resources\Fonts\MerriweatherSans-SemiBoldItalic.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\Dependentes\DependenteCadView.xaml.cs">
+	    <DependentUpon>DependenteCadView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Dependentes\DependenteView.xaml.cs">
+	    <DependentUpon>DependenteView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\PessoasAreas\PessoasAreasView.xaml.cs">
+	    <DependentUpon>PessoasAreasView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\PessoasAreas\PessoasAreasFzView.xaml.cs">
+	    <DependentUpon>PessoasAreasFzView.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\Dependentes\DependenteCadView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Dependentes\DependenteView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Encomendas\EncomendasRetiradasView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Encomendas\EncomendasView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Usuarios\CadastrarView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PessoasAreas\PessoasAreasFzView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PessoasAreas\PessoasAreasView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Usuarios\LoginView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionTelaLoginHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+
+</Project>

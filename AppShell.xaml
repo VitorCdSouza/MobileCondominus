@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TelaLogin.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#039298"
+    xmlns:viewsPesAr="clr-namespace:TelaLogin.Views.PessoasAreas"
+    xmlns:viewsUsuario="clr-namespace:TelaLogin.Views.Usuarios"
+    xmlns:viewsComuni="clr-namespace:TelaLogin.Views.Comunicacao"
+    xmlns:viewsEncom="clr-namespace:TelaLogin.Views.Encomendas"
+    xmlns:viewsDepen="clr-namespace:TelaLogin.Views.Dependentes"
+    xmlns:local="clr-namespace:TelaLogin">
+
+    <Shell.FlyoutHeaderTemplate >
+        <DataTemplate >
+            <Grid BackgroundColor="#039298">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="{OnPlatform Android=130, iOS=200}" />
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="10"/>
+                </Grid.RowDefinitions>
+                <FlexLayout Grid.Row="0" Direction="Row" AlignItems="Center">
+                    <Frame Padding="0" CornerRadius="30" HeightRequest="70" WidthRequest="70" >
+                        <Image Source="logo_1.png"/>
+                    </Frame>
+                    <VerticalStackLayout Padding="10, 0, 0, 0" Spacing="0">
+                        <Label Text="Condominus" FontAttributes="Bold" FontSize="Medium" TextColor="white"/>
+                        <Label Text="Os Ex-Melhores" TextColor="white"/>
+                    </VerticalStackLayout>
+                </FlexLayout>
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <FlyoutItem>
+        <ShellContent
+        Title="Avisos" Icon="avisosicon.svg"
+        ContentTemplate="{DataTemplate viewsComuni:AvisosView}"
+        Route="MainPage"
+        />
+        <Tab Title="Encomendas" Route="Encomendas" Icon="encomendaicon.svg">
+        <ShellContent
+        Title="Aguardando Retirada"
+        ContentTemplate="{DataTemplate viewsEncom:EncomendasView}"
+        Route="MainPage"
+        />
+        <ShellContent
+        Title="       Retiradas       " 
+        ContentTemplate="{DataTemplate viewsEncom:EncomendasRetiradasView}"
+        Route="MainPage"
+        
+        />
+        </Tab>
+        <ShellContent
+           
+        Title="Reservas" Icon="reservaicon.svg"
+        ContentTemplate="{DataTemplate viewsPesAr:PessoasAreasView}"
+        Route="MainPage"
+        />
+        <ShellContent
+        Title="Dependente" Icon="acessoicon.svg"
+        ContentTemplate="{DataTemplate viewsDepen:DependenteView}"
+        Route="MainPage"
+        />
+        <ShellContent
+        Title="FeedBack" Icon="feedbackicon.svg"
+        ContentTemplate="{DataTemplate viewsComuni:FeedBackView}"
+        Route="MainPage"
+        />
+
+        <Tab Title="Info" Route="info" Icon="info.svg" >
+            <ShellContent Title="Sobre" Route="sobre" ContentTemplate="{DataTemplate local:AboutView}"/>
+            <ShellContent Title="Descrição" Route="desc" ContentTemplate="{DataTemplate local:DescriptionView}"/>
+        </Tab>
+
+    </FlyoutItem>
+    <ShellContent Title="Sair" Icon="Exit.png" ContentTemplate="{DataTemplate viewsUsuario:LoginView}" Shell.FlyoutBehavior="Disabled" Shell.NavBarIsVisible="False"/>
+    <Shell.FlyoutFooter>
+        <Label x:Name="lblLogin" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+    </Shell.FlyoutFooter>
+
+</Shell>

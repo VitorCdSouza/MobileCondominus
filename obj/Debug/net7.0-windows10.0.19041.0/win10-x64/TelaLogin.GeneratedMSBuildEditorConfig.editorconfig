@@ -1,0 +1,113 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TelaLogin
+build_property.ProjectDir = E:\Organizados\Etec\4 Bimestre\TCC\MobileCondominus\
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/AboutView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.AboutView.xaml
+build_metadata.AdditionalFiles.TargetPath = AboutView.xaml
+build_metadata.AdditionalFiles.RelativePath = AboutView.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/DescriptionView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.DescriptionView.xaml
+build_metadata.AdditionalFiles.TargetPath = DescriptionView.xaml
+build_metadata.AdditionalFiles.RelativePath = DescriptionView.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Views/Comunicacao/AvisosView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Views.Comunicacao.AvisosView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Comunicacao\AvisosView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Comunicacao\AvisosView.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Views/Comunicacao/FeedBackView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Views.Comunicacao.FeedBackView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Comunicacao\FeedBackView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Comunicacao\FeedBackView.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Views/Dependentes/DependenteCadView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Views.Dependentes.DependenteCadView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Dependentes\DependenteCadView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Dependentes\DependenteCadView.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Views/Dependentes/DependenteView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Views.Dependentes.DependenteView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Dependentes\DependenteView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Dependentes\DependenteView.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Views/Encomendas/EncomendasRetiradasView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Views.Encomendas.EncomendasRetiradasView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Encomendas\EncomendasRetiradasView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Encomendas\EncomendasRetiradasView.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Views/Encomendas/EncomendasView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Views.Encomendas.EncomendasView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Encomendas\EncomendasView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Encomendas\EncomendasView.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Views/PessoasAreas/PessoasAreasFzView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Views.PessoasAreas.PessoasAreasFzView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PessoasAreas\PessoasAreasFzView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PessoasAreas\PessoasAreasFzView.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Views/PessoasAreas/PessoasAreasView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Views.PessoasAreas.PessoasAreasView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PessoasAreas\PessoasAreasView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PessoasAreas\PessoasAreasView.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Views/Usuarios/CadastrarView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Views.Usuarios.CadastrarView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\CadastrarView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\CadastrarView.xaml
+
+[E:/Organizados/Etec/4 Bimestre/TCC/MobileCondominus/Views/Usuarios/LoginView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TelaLogin.Views.Usuarios.LoginView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\LoginView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\LoginView.xaml

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TelaLogin.Views.Comunicacao.AvisosView"
+             Title="Avisos">
+
+    <ScrollView HeightRequest="685">
+        <StackLayout>
+
+            <VerticalStackLayout Padding="10, 0, 0, 0" VerticalOptions="FillAndExpand">
+                <ListView x:Name="listView" HasUnevenRows="True" ItemsSource="{Binding Avi}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+
+                                <StackLayout Padding="10" Spacing="5">
+                                    <Label Text="{Binding AssuntoNotificacaoDTO}" FontSize="18" FontAttributes="Bold"/>
+                                    <StackLayout HorizontalOptions="Start" Spacing="1">
+                                    
+                                    <Label Text="{Binding MensagemNotificacaoDTO}" FontSize="16"/>
+                                    </StackLayout>
+                                    <Label Text="{Binding DataEnvioNotificacaoDTO,StringFormat='{0:dd/MM/yyyy HH:mm}',Mode=OneWay}" FontSize="14"/>
+                                </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </VerticalStackLayout>
+           
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

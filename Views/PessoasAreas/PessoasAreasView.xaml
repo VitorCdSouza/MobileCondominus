@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TelaLogin.Views.PessoasAreas.PessoasAreasView"
+             Title="Reservas"
+             >
+    <!-- Your content goes here -->
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="15" >
+        <StackLayout HeightRequest="600">
+            <ScrollView HeightRequest="600">
+                <ListView x:Name="listView" HasUnevenRows="True" ItemsSource="{Binding Pessoas}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Spacing="10" Padding="10,0,0,0">
+                                    <Label TextColor="Black">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span FontSize="Medium"  FontAttributes="Bold" Text ="Reserva do Local: " />
+                                                <Span FontSize="Medium" Text="{Binding NomeAreaPessAreaDTO}" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <StackLayout Orientation="Horizontal" Spacing="48" >
+                                        <Label TextColor="Black">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span FontSize="Medium"  FontAttributes="Bold"  Text="Dia: " />
+                                                    <Span  FontSize="Medium" Text="{Binding dataHoraFimPessAreaDTO, StringFormat='{0:dd/MM/yyyy}', Mode=OneWay}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" Spacing="15">
+                                        <Label TextColor="Black">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span FontSize="Medium"  FontAttributes="Bold" Text="Entrada: " />
+                                                    <Span  FontSize="Medium" Text="{Binding dataHoraInicioPessAreaDTO, StringFormat='{0:HH:mm}', Mode=OneWay}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label TextColor="Black">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span FontSize="Medium"  FontAttributes="Bold" Text="Saida: " />
+                                                    <Span  FontSize="Medium" Text="{Binding dataHoraFimPessAreaDTO, StringFormat='{0:HH:mm}', Mode=OneWay}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Spacing="57" Background="Transparent" HeightRequest="70" HorizontalOptions="Center">
+            
+            <Button Text="Editar"  BorderWidth="1" BorderColor="#039298" FontAttributes="Bold" BackgroundColor="white" Command="{Binding AutenticarCommand}" TextColor="black" HorizontalOptions="Start"  CornerRadius="20" WidthRequest="150" HeightRequest="45"/>
+            
+            <Button Text="Nova Reserva" FontAttributes="Bold"  TextColor="Black" Pressed="OnButtonClicked" HorizontalOptions="End" BackgroundColor="white" BorderWidth="1"  BorderColor="#039298" CornerRadius="20" HeightRequest="45" WidthRequest="150"/>
+            
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
