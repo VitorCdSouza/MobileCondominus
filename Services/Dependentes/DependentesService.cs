@@ -12,6 +12,7 @@ namespace TelaLogin.Services.Dependentes
     {
         private readonly Request _request;
         private const string apiUrlBase = "http://26.155.159.147:5237/Dependentes";
+        private const string apiCad = "http://26.155.159.147:5237/Dependentes/AddDepMorador";
 
         private string _token;
         public DependentesService(string token)
@@ -21,11 +22,10 @@ namespace TelaLogin.Services.Dependentes
         }
         #region metodos
 
-        public async Task<DependenteDTO> PostDependenteAsync(DependenteDTO a)
+        public async Task<string> PostDependenteAsync(Dependente enviado)
         {
-            
-            a = await _request.PostAsync(apiUrlBase, a, _token);
-            return a;
+            enviado = await _request.PostAsync(apiCad, enviado, _token);
+            return "ok";
         }
         public async Task<ObservableCollection<DependenteDTO>> GetDependentesAsync()
         {

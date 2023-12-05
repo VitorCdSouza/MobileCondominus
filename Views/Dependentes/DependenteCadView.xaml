@@ -22,7 +22,7 @@
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="10" />
                 </Border.StrokeShape>
-                <Entry BackgroundColor="White" Text ="{Binding Nome}" FontSize="13" HeightRequest="33" WidthRequest="300"/>
+                <Entry BackgroundColor="White" Text ="{Binding NomeDependenteDTO}" FontSize="13" HeightRequest="33" WidthRequest="300"/>
             </Border>
         </StackLayout>
 
@@ -40,10 +40,10 @@
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="10" />
                 </Border.StrokeShape>
-                <Entry IsPassword="True" BackgroundColor="White" Text="{Binding Cpf}" FontSize="10" HeightRequest="33" />
+                <Entry BackgroundColor="White" Text="{Binding CpfDependenteDTO}" FontSize="10" HeightRequest="33" />
             </Border>
         </StackLayout>
-        <StackLayout Spacing="5">
+        <!--<StackLayout Spacing="5">
             <Label Text="RG:" TextColor="Black" FontAttributes="Bold" Margin="26, 0, 0, 0"/>
             <Border Stroke="Pink"
                 StrokeThickness="0"
@@ -128,7 +128,7 @@
                 </Border.StrokeShape>
                 <Entry IsPassword="True" BackgroundColor="White" Text="{Binding Data}" FontSize="10" HeightRequest="33" />
             </Border>
-        </StackLayout>
+        </StackLayout>-->
 
         <!-- Espaço em branco no topo para ajustar a posição da imagem -->
         <BoxView HeightRequest="40" Color="Transparent" />
@@ -138,7 +138,7 @@
 
             <!-- Espaço em branco no topo para ajustar a posição da imagem -->
             <!-- Botão de Editar -->
-            <Button Text="Confirmar" FontAttributes="Bold" Command="{Binding PostAcessoCommand}" Pressed="OnButtonClicked2"  TextColor="black" HorizontalOptions="End" BackgroundColor="white" BorderWidth="1"  BorderColor="#039298" CornerRadius="20" HeightRequest="45" WidthRequest="150"/>
+            <Button Text="Concluir Cadastro" FontAttributes="Bold" BackgroundColor="#0D393F" Command="{Binding PostDependenteCommand}" TextColor="White" CornerRadius="20" WidthRequest="300"/>
         </StackLayout>
         <!-- Espaço em branco no topo para ajustar a posição da imagem -->
     </StackLayout>

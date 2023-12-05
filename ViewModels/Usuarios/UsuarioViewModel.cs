@@ -114,15 +114,10 @@ namespace TelaLogin.ViewModels.Usuarios
 
                 if (!string.IsNullOrEmpty(uAutenticado.TokenUsuario)) 
                 {
-                    string mensagem = $"Bem-vindo(a) {uAutenticado.PessoaUsuario.NomePessoa}.";
-
                     Preferences.Set("UsuarioId", uAutenticado.IdUsuario);// Id da Pessoa
                     Preferences.Set("UsuarioNome", uAutenticado.PessoaUsuario.NomePessoa); //Mudar para Email
                     //Preferences.Set("UsuarioPerfil", uAutenticado.Perfil);
                     Preferences.Set("UsuarioToken", uAutenticado.TokenUsuario);
-
-                    await Application.Current.MainPage
-                        .DisplayAlert("Informação", mensagem, "Ok");
 
                     Application.Current.MainPage = new AppShell();
                 }

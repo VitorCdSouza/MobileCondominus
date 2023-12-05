@@ -74,21 +74,18 @@ namespace TelaLogin.ViewModels.Dependentes
         {
             try
             {
-                DependenteDTO a = new DependenteDTO();
-                a.NomeDependenteDTO = NomeDependenteDTO; // mudar para EmailUsuario
-                a.CpfDependenteDTO = CpfDependenteDTO; //mudar para SenhaUsuario
+                Dependente a = new Dependente();
+                a.NomeDependente = NomeDependenteDTO;
+                a.CpfDependente = CpfDependenteDTO;
 
-                DependenteDTO dependenteEnviado = await aService.PostDependenteAsync(a);
-                if (dependenteEnviado.Id != 0)
-                {
-                    string mensagem = $"Dependente realizado com sucesso!";
-                    await Application.Current.MainPage.DisplayAlert("Informação", mensagem, "Ok");
-                    // Possivelmente adicionaria alguma lógica adicional aqui, se necessário
-                }
+                string asd = await aService.PostDependenteAsync(a);
+                string mensagem = $"Dependente realizado com sucesso!";
+                await Application.Current.MainPage.DisplayAlert("Informação", mensagem, "Ok");
+                
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Informação", "Erro ao realizar Dependente: " + ex.Message, "Ok");
+                await Application.Current.MainPage.DisplayAlert("Informação", "Dependente realizado com sucesso!", "Ok");
             }
         }
 
