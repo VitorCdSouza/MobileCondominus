@@ -6,282 +6,70 @@
     <Grid>
         <!-- Set the background image -->
         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="15" >
-            <ScrollView HeightRequest="607">
-                <StackLayout>
-                    <Frame WidthRequest="340" HeightRequest="110" CornerRadius="10" BackgroundColor="white" Margin="0, 10, 0, 0" Padding="20,10,0,0" BorderColor="white">
-                        <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
-                            <Label TextColor="Black">
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <Span FontSize="Medium"  Text ="Reserva do Local: " />
-                                        <Span Text="{Binding Senha}" />
-                                    </FormattedString>
-                                </Label.FormattedText>
-                            </Label>
-                            <StackLayout Orientation="Horizontal" Spacing="48">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium"  Text="Dia: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" Spacing="20">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium"  Text="Entrada: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium"  Text="Saida: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                            </StackLayout>
-                        </StackLayout>
-                    </Frame>
-                    <BoxView HeightRequest="1" WidthRequest="340" Color="grey" Opacity="0.5" HorizontalOptions="Center"/>
-                    <Frame WidthRequest="340" HeightRequest="110" CornerRadius="10" BackgroundColor="white" Margin="0, 10, 0, 0" Padding="20,10,0,0" BorderColor="white">
-                        <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
-                            <Label TextColor="Black">
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <Span FontSize="Medium"  Text ="Reserva do Local: " />
-                                        <Span Text="{Binding Senha}" />
-                                    </FormattedString>
-                                </Label.FormattedText>
-                            </Label>
-                            <StackLayout Orientation="Horizontal" Spacing="48">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium" Text="Dia: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" Spacing="20">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium" Text="Entrada: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium"  Text="Saida: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                            </StackLayout>
-                        </StackLayout>
-                    </Frame>
-                    <BoxView HeightRequest="1" WidthRequest="340" Color="grey" Opacity="0.5" HorizontalOptions="Center"/>
-                    <Frame WidthRequest="340" HeightRequest="110" CornerRadius="10" BackgroundColor="white" Margin="0, 10, 0, 0" Padding="20,10,0,0" BorderColor="white">
-                        <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
-                            <Label TextColor="Black">
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <Span FontSize="Medium"  Text ="Reserva do Local: " />
-                                        <Span Text="{Binding Senha}" />
-                                    </FormattedString>
-                                </Label.FormattedText>
-                            </Label>
-                            <StackLayout Orientation="Horizontal" Spacing="48">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium"  Text="Dia: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" Spacing="20">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium"  Text="Entrada: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium"  Text="Saida: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                            </StackLayout>
-                        </StackLayout>
-                    </Frame>
-                    <BoxView HeightRequest="1" WidthRequest="340" Color="grey" Opacity="0.5" HorizontalOptions="Center"/>
-                    <Frame WidthRequest="340" HeightRequest="110" CornerRadius="10" BackgroundColor="white" Margin="0, 10, 0, 0" Padding="20,10,0,0" BorderColor="white">
-                        <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
-                            <Label TextColor="Black">
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <Span FontSize="Medium" Text ="Reserva do Local: " />
-                                        <Span Text="{Binding Senha}" />
-                                    </FormattedString>
-                                </Label.FormattedText>
-                            </Label>
-                            <StackLayout Orientation="Horizontal" Spacing="48">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium"  Text="Dia: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" Spacing="20">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium" Text="Entrada: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium" Text="Saida: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                            </StackLayout>
-                        </StackLayout>
-                    </Frame>
-                    <BoxView HeightRequest="1" WidthRequest="340" Color="grey" Opacity="0.5" HorizontalOptions="Center"/>
-
-                    <Frame WidthRequest="340" HeightRequest="110" CornerRadius="10" BackgroundColor="white" Margin="0, 10, 0, 0" Padding="20,10,0,0" BorderColor="white">
-                        <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
-                            <Label TextColor="Black">
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <Span FontSize="Medium"  Text ="Reserva do Local: " />
-                                        <Span Text="{Binding Senha}" />
-                                    </FormattedString>
-                                </Label.FormattedText>
-                            </Label>
-                            <StackLayout Orientation="Horizontal" Spacing="48">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium" Text="Dia: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" Spacing="20">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium"  Text="Entrada: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium" Text="Saida: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                            </StackLayout>
-                        </StackLayout>
-                    </Frame>
-                    <BoxView HeightRequest="1" WidthRequest="340" Color="grey" Opacity="0.5" HorizontalOptions="Center"/>
-                    <Frame WidthRequest="340" HeightRequest="110" CornerRadius="10" BackgroundColor="white" Margin="0, 10, 0, 0" Padding="20,10,0,0" BorderColor="white">
-                        <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
-                            <Label TextColor="Black">
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <Span FontSize="Medium" Text ="Reserva do Local: " />
-                                        <Span Text="{Binding Senha}" />
-                                    </FormattedString>
-                                </Label.FormattedText>
-                            </Label>
-                            <StackLayout Orientation="Horizontal" Spacing="48">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium" Text="Dia: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" Spacing="20">
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium" Text="Entrada: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span FontSize="Medium"  Text="Saida: " />
-                                            <Span Text="{Binding Senha}" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                            </StackLayout>
-                        </StackLayout>
-                    </Frame>
-                    <BoxView HeightRequest="1" WidthRequest="340" Color="grey" Opacity="0.5" HorizontalOptions="Center"/>
-                </StackLayout>
-            </ScrollView>
+            <StackLayout HeightRequest="290">
+                <ScrollView HeightRequest="290">
+                    <ListView x:Name="listView" HasUnevenRows="True" ItemsSource="{Binding Pessoas}" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Spacing="10" Padding="10,0,0,0">
+                                        <Label TextColor="Black">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span FontSize="Medium"  FontAttributes="Bold" Text ="Reserva do Local: " />
+                                                    <Span FontSize="Medium" Text="{Binding NomeAreaPessAreaDTO}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <StackLayout Orientation="Horizontal" Spacing="48" >
+                                            <Label TextColor="Black">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span FontSize="Medium"  FontAttributes="Bold"  Text="Dia: " />
+                                                        <Span  FontSize="Medium" Text="{Binding DataHoraFimPessAreaDTO, StringFormat='{0:dd/MM/yyyy}', Mode=OneWay}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" Spacing="15">
+                                            <Label TextColor="Black">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span FontSize="Medium"  FontAttributes="Bold" Text="Entrada: " />
+                                                        <Span  FontSize="Medium" Text="{Binding DataHoraInicioPessAreaDTO, StringFormat='{0:HH:mm}', Mode=OneWay}" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label TextColor="Black">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span FontSize="Medium"  FontAttributes="Bold" Text="Saida: " />
+                                                        <Span  FontSize="Medium" Text="{Binding DataHoraFimPessAreaDTO, StringFormat='{0:HH:mm}', Mode=OneWay}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollView>
+            </StackLayout>
 
             <!-- Espaço em branco no topo para ajustar a posição da imagem -->
-            <BoxView HeightRequest="205" Color="Transparent" />
+            <BoxView HeightRequest="25" Color="Transparent" />
             <StackLayout Spacing="5">
                 <Label Text="Local:" TextColor="Black" FontAttributes="Bold" Margin="47, 0, 0, 0" FontSize="Medium" />
                 <!--  <Border Stroke="#808080" StrokeThickness="2" WidthRequest="200" HeightRequest="33" Margin="0, 0, 0, 0" HorizontalOptions="Center"-->
-                <Picker Title="Escolha um Local" WidthRequest="300" >
-                        <Picker.ItemsSource>
-                            <x:Array Type="{x:Type x:String}">
-                                <x:String>Salão de Festas</x:String>
-                                <x:String>Quadra</x:String>
-                                <x:String>Outro Salão de Festas</x:String>
-                            </x:Array>
-                        </Picker.ItemsSource>
-                    </Picker>
+                <Picker Title="Selecione a Area"
+                TitleColor="Black"
+                ItemsSource="{Binding AreasComuns}"
+                SelectedItem="{Binding AreaSelecionada}" />  
                 <!--</Border-->
             </StackLayout>
-           
-                <StackLayout Spacing="5" HorizontalOptions="Start" HeightRequest="40" VerticalOptions="Center" Margin="0, 0, 0, 0" >
+
+            <StackLayout Spacing="5" HorizontalOptions="Start" HeightRequest="40" VerticalOptions="Center" Margin="0, 0, 0, 0" >
                 <StackLayout Background="transparent" Orientation="Horizontal" HorizontalOptions="Center" HeightRequest="40" VerticalOptions="Center" Margin="0, 10, 0, 0" >
                     <Label Text="Data:" FontSize="Medium" TextColor="Black" FontAttributes="Bold" Margin="50, 0, 0, 0" />
                     <Border Stroke="#039298" StrokeThickness="2" WidthRequest="72" HeightRequest="40" Margin="10, 0, 0, 10" HorizontalOptions="Center">
@@ -315,7 +103,7 @@
                         </Border>
                     </StackLayout>
                 </StackLayout>
-                    
+
             </StackLayout>
             <StackLayout Orientation="Horizontal" Spacing="57" Background="Transparent" HeightRequest="70" HorizontalOptions="Center" Margin="0, 50, 0, 0">
                 <!-- Botão de Novar Reserva -->

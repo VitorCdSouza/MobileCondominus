@@ -12,6 +12,8 @@ namespace TelaLogin.ViewModels.PessoasAreas
         private PessoasAreasService rService;
         public ICommand ObterCommand { get; set; }
         public ObservableCollection<PessoaAreaComumDTO> Pessoas { get; set; }
+        public List<string> AreasComunsStr { get; set; }
+        public string AreaSelecionada { get; set; }
 
         public void InicializarCommands()
         {
@@ -22,11 +24,25 @@ namespace TelaLogin.ViewModels.PessoasAreas
             string token = Preferences.Get("UsuarioToken", string.Empty);
             rService = new PessoasAreasService(token);
             Pessoas = new ObservableCollection<PessoaAreaComumDTO>();
+            AreasComunsStr = new List<string>();
+            _ = ObterAreas();
             _ = ObterPessoasAreas();
+
             InicializarCommands();
         }
 
         #region AtributosPropriedades
+        private List<string> areasComuns;
+        public List<string> AreasComuns
+        {
+            get { return areasComuns; }
+            set
+            {
+                areasComuns = value;
+                OnPropertyChanged();
+            }
+        }
+
         private int id;
         public int Id
         {
@@ -105,12 +121,24 @@ namespace TelaLogin.ViewModels.PessoasAreas
         }
         #endregion
 
-
+        public async Task ObterAreas()
+        {
+            try
+            {
+                AreasComunsStr = await rService.GetAreasComunsAsync();
+                OnPropertyChanged(nameof(Pessoas));
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", "Erro ao obter Pessoas: " + ex.Message, "Ok");
+            }
+        }
         public async Task ObterPessoasAreas()
         {
             try
             {
-                Pessoas = await rService.GetPessoaAreasAsync();
+                Pessoas = await rService.GetPessoasAreasComunsAsync();
                 OnPropertyChanged(nameof(Pessoas));
             }
             catch (Exception ex)
