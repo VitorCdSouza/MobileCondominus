@@ -9,7 +9,6 @@ namespace TelaLogin.Services.Encomendas
 {
     public class EncomendasRetiradasService : Request
     {
-
         private readonly Request _request;
         private const string apiUrlBase = "http://26.155.159.147:5237/Entregas";
 

@@ -12,8 +12,7 @@ namespace TelaLogin.ViewModels.PessoasAreas
         private PessoasAreasService rService;
         public ICommand ObterCommand { get; set; }
         public ObservableCollection<PessoaAreaComumDTO> Pessoas { get; set; }
-        public List<string> AreasComunsStr { get; set; }
-        public string AreaSelecionada { get; set; }
+        public ObservableCollection<AreaComum> AreasComuns { get; set; }
 
         public void InicializarCommands()
         {
@@ -24,7 +23,7 @@ namespace TelaLogin.ViewModels.PessoasAreas
             string token = Preferences.Get("UsuarioToken", string.Empty);
             rService = new PessoasAreasService(token);
             Pessoas = new ObservableCollection<PessoaAreaComumDTO>();
-            AreasComunsStr = new List<string>();
+            AreasComuns = new ObservableCollection<AreaComum>();
             _ = ObterAreas();
             _ = ObterPessoasAreas();
 
@@ -32,17 +31,20 @@ namespace TelaLogin.ViewModels.PessoasAreas
         }
 
         #region AtributosPropriedades
-        private List<string> areasComuns;
-        public List<string> AreasComuns
+
+        private AreaComum areaSelecionada;
+        public AreaComum AreaSelecionada
         {
-            get { return areasComuns; }
+            get { return areaSelecionada; }
             set
             {
-                areasComuns = value;
-                OnPropertyChanged();
+                if (areaSelecionada != value)
+                {
+                    areaSelecionada = value;
+                    OnPropertyChanged(nameof(AreaSelecionada));
+                }
             }
         }
-
         private int id;
         public int Id
         {
@@ -119,14 +121,25 @@ namespace TelaLogin.ViewModels.PessoasAreas
                 OnPropertyChanged();
             }
         }
+
+        private string nomeAreaComumADTO;
+        public string NomeAreaComumADTO
+        {
+            get { return nomeAreaComumADTO; }
+            set
+            {
+                nomeAreaComumADTO = value;
+                OnPropertyChanged();
+            }
+        }
         #endregion
 
         public async Task ObterAreas()
         {
             try
             {
-                AreasComunsStr = await rService.GetAreasComunsAsync();
-                OnPropertyChanged(nameof(Pessoas));
+                AreasComuns = await rService.GetAreaComumAsync();
+                OnPropertyChanged(nameof(AreasComuns));
             }
             catch (Exception ex)
             {

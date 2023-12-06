@@ -76,7 +76,12 @@ namespace TelaLogin.ViewModels.Dependentes
             {
                 Dependente a = new Dependente();
                 a.NomeDependente = NomeDependenteDTO;
-                a.CpfDependente = CpfDependenteDTO;
+                if (!DocumentValidator.ValidateDocument(DocumentValidator.FormatDocument(CpfDependenteDTO)))
+                {
+                    await Application.Current.MainPage.DisplayAlert("Informação", "CPF inválido!", "Ok");
+                    return;
+                }
+                a.CpfDependente = DocumentValidator.FormatDocument(CpfDependenteDTO);
 
                 string asd = await aService.PostDependenteAsync(a);
                 string mensagem = $"Dependente realizado com sucesso!";

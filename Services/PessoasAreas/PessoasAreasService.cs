@@ -33,7 +33,7 @@ namespace TelaLogin.Services.PessoasAreas
             ObservableCollection<PessoaAreaComumDTO> listaReservas = await 
             _request.GetAsync<ObservableCollection<PessoaAreaComumDTO>>(apiUrlBase + urlComplementar, _token);
             return listaReservas;
-        }
+        }/*
 
         public async Task<List<string>> GetAreasComunsAsync()
         {
@@ -46,6 +46,14 @@ namespace TelaLogin.Services.PessoasAreas
                 areaComuns.Add(area.NomeAreaComumDTO);
             }
             return areaComuns;
+        }*/
+        public async Task<ObservableCollection<AreaComum>> GetAreaComumAsync()
+        {
+            string urlComplementar = "http://26.155.159.147:5237/AreasComuns/GetAllCondominio";
+            ObservableCollection<AreaComum> listaAreaComum = await
+            _request.GetAsync<ObservableCollection<AreaComum>>(urlComplementar, _token);
+
+            return listaAreaComum;
         }
 
         public async Task<int> DeletePessoaAreasAsync(int ReservaId)

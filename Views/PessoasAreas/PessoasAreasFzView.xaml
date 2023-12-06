@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TelaLogin.Views.PessoasAreas.PessoasAreasFzView"
              Title="Reservva">
@@ -26,7 +27,7 @@
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span FontSize="Medium"  FontAttributes="Bold"  Text="Dia: " />
-                                                        <Span  FontSize="Medium" Text="{Binding DataHoraFimPessAreaDTO, StringFormat='{0:dd/MM/yyyy}', Mode=OneWay}"/>
+                                                        <Span  FontSize="Medium" Text="{Binding dataHoraFimPessAreaDTO, StringFormat='{0:dd/MM/yyyy}', Mode=OneWay}"/>
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -36,7 +37,7 @@
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span FontSize="Medium"  FontAttributes="Bold" Text="Entrada: " />
-                                                        <Span  FontSize="Medium" Text="{Binding DataHoraInicioPessAreaDTO, StringFormat='{0:HH:mm}', Mode=OneWay}" />
+                                                        <Span  FontSize="Medium" Text="{Binding dataHoraInicioPessAreaDTO, StringFormat='{0:HH:mm}', Mode=OneWay}" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -44,7 +45,7 @@
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span FontSize="Medium"  FontAttributes="Bold" Text="Saida: " />
-                                                        <Span  FontSize="Medium" Text="{Binding DataHoraFimPessAreaDTO, StringFormat='{0:HH:mm}', Mode=OneWay}"/>
+                                                        <Span  FontSize="Medium" Text="{Binding dataHoraFimPessAreaDTO, StringFormat='{0:HH:mm}', Mode=OneWay}"/>
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -65,7 +66,10 @@
                 <Picker Title="Selecione a Area"
                 TitleColor="Black"
                 ItemsSource="{Binding AreasComuns}"
-                SelectedItem="{Binding AreaSelecionada}" />  
+                ItemDisplayBinding="{Binding NomeAreaComumDTO}"
+                SelectedItem="{Binding AreaSelecionada}"
+                />
+
                 <!--</Border-->
             </StackLayout>
 
@@ -76,7 +80,7 @@
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="10" />
                         </Border.StrokeShape>
-                        <DatePicker x:Name="DateTimePicker" Format="d/M/y" />
+                        <DatePicker x:Name="datePicker" Format="d/M/y" Date="{x:Binding PessoasAreasViewModel.DataHoraInicioPessAreaDTO, Mode=TwoWay}" />
                     </Border>
                 </StackLayout>
             </StackLayout>
@@ -88,26 +92,25 @@
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="10" />
                             </Border.StrokeShape>
-
-                            <TimePicker x:Name="startTimePicker" Format="t"/>
+                            <StackLayout>
+                            <TimePicker x:Name="YourTimePicker" />
+                                <TimePicker ></TimePicker>
+                            </StackLayout>
                         </Border>
                     </StackLayout>
                     <StackLayout Background="transparent" Orientation="Horizontal" HorizontalOptions="Center" HeightRequest="40" WidthRequest="200"   VerticalOptions="Center" Margin="0, 0, 0, 0" Spacing="94">
                         <Label Margin="0, 23, 0, 0" HeightRequest="40" Text="Horário de Saída:" FontAttributes="Bold" />
-                        <Border Stroke="#039298" StrokeThickness="2" WidthRequest="75" HeightRequest="40" Margin="15, 0, 0, 0" HorizontalOptions="Center">
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="10" />
-                            </Border.StrokeShape>
 
-                            <TimePicker x:Name="endTimePicker" Format="t"/>
-                        </Border>
+                        <StackLayout>
+                            <TimePicker x:Name="timePicker" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
                     </StackLayout>
                 </StackLayout>
 
             </StackLayout>
             <StackLayout Orientation="Horizontal" Spacing="57" Background="Transparent" HeightRequest="70" HorizontalOptions="Center" Margin="0, 50, 0, 0">
                 <!-- Botão de Novar Reserva -->
-                <Button Text="Cancelar"  BorderWidth="1" BorderColor="#039298" FontAttributes="Bold" BackgroundColor="white" Command="{Binding AutenticarCommand}" TextColor="black" HorizontalOptions="Start"  CornerRadius="20" WidthRequest="150" HeightRequest="45"/>
+                <Button Text="Cancelar"  BorderWidth="1" BorderColor="#039298" Pressed="OnButtonClicked" FontAttributes="Bold" BackgroundColor="white" TextColor="black" HorizontalOptions="Start"  CornerRadius="20" WidthRequest="150" HeightRequest="45"/>
 
                 <!-- Espaço em branco no topo para ajustar a posição da imagem -->
                 <!-- Botão de Editar -->

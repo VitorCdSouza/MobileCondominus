@@ -10,31 +10,31 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>73c90683-b510-4a63-aa92-ce5475afc23c</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Nicolas\Desktop\TCCMOM\MobileCondominus\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Nicolas\Desktop\TCCMOM\MobileCondominus\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Nicolas\Desktop\TCCMOM\MobileCondominus\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCCMOM\MobileCondominus\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\TelaLogin.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCCMOM\MobileCondominus\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\TelaLogin.runtimeconfig.json">
       <PackagePath>TelaLogin.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\TelaLogin.dll">
+    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCCMOM\MobileCondominus\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\TelaLogin.dll">
       <PackagePath>TelaLogin.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCCMOM\MobileCondominus\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>TelaLogin.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nicolas\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.2\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
@@ -694,7 +694,7 @@
     <AppxPackagedFile Include="C:\Users\Nicolas\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\TelaLogin.deps.json">
+    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCCMOM\MobileCondominus\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\TelaLogin.deps.json">
       <PackagePath>TelaLogin.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.52\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
@@ -706,302 +706,8 @@
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Core.Ref.win\7.0.52\ref\net7.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCCMOM\MobileCondominus\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-100.png">
-      <PackagePath>logoSplashScreen.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-125.png">
-      <PackagePath>logoSplashScreen.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-150.png">
-      <PackagePath>logoSplashScreen.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-200.png">
-      <PackagePath>logoSplashScreen.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logoSplashScreen.scale-400.png">
-      <PackagePath>logoSplashScreen.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-Bold.ttf">
-      <PackagePath>MerriweatherSans-Bold.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-BoldItalic.ttf">
-      <PackagePath>MerriweatherSans-BoldItalic.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-ExtraBold.ttf">
-      <PackagePath>MerriweatherSans-ExtraBold.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-ExtraBoldItalic.ttf">
-      <PackagePath>MerriweatherSans-ExtraBoldItalic.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-Italic.ttf">
-      <PackagePath>MerriweatherSans-Italic.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-Light.ttf">
-      <PackagePath>MerriweatherSans-Light.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-LightItalic.ttf">
-      <PackagePath>MerriweatherSans-LightItalic.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-Medium.ttf">
-      <PackagePath>MerriweatherSans-Medium.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-MediumItalic.ttf">
-      <PackagePath>MerriweatherSans-MediumItalic.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-Regular.ttf">
-      <PackagePath>MerriweatherSans-Regular.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-SemiBold.ttf">
-      <PackagePath>MerriweatherSans-SemiBold.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\MerriweatherSans-SemiBoldItalic.ttf">
-      <PackagePath>MerriweatherSans-SemiBoldItalic.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
-      <PackagePath>OpenSans-Regular.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
-      <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\acessoicon.scale-100.png">
-      <PackagePath>acessoicon.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\acessoicon.scale-125.png">
-      <PackagePath>acessoicon.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\acessoicon.scale-150.png">
-      <PackagePath>acessoicon.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\acessoicon.scale-200.png">
-      <PackagePath>acessoicon.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\acessoicon.scale-400.png">
-      <PackagePath>acessoicon.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\avisosicon.scale-100.png">
-      <PackagePath>avisosicon.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\avisosicon.scale-125.png">
-      <PackagePath>avisosicon.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\avisosicon.scale-150.png">
-      <PackagePath>avisosicon.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\avisosicon.scale-200.png">
-      <PackagePath>avisosicon.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\avisosicon.scale-400.png">
-      <PackagePath>avisosicon.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\encomendaicon.scale-100.png">
-      <PackagePath>encomendaicon.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\encomendaicon.scale-125.png">
-      <PackagePath>encomendaicon.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\encomendaicon.scale-150.png">
-      <PackagePath>encomendaicon.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\encomendaicon.scale-200.png">
-      <PackagePath>encomendaicon.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\encomendaicon.scale-400.png">
-      <PackagePath>encomendaicon.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\feedbackicon.scale-100.png">
-      <PackagePath>feedbackicon.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\feedbackicon.scale-125.png">
-      <PackagePath>feedbackicon.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\feedbackicon.scale-150.png">
-      <PackagePath>feedbackicon.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\feedbackicon.scale-200.png">
-      <PackagePath>feedbackicon.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\feedbackicon.scale-400.png">
-      <PackagePath>feedbackicon.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.ico">
-      <PackagePath>logo.ico</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLargeTile.scale-100.png">
-      <PackagePath>logoLargeTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLargeTile.scale-125.png">
-      <PackagePath>logoLargeTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLargeTile.scale-150.png">
-      <PackagePath>logoLargeTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLargeTile.scale-200.png">
-      <PackagePath>logoLargeTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLargeTile.scale-400.png">
-      <PackagePath>logoLargeTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>logoLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>logoLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>logoLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>logoLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>logoLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>logoLogo.altform-unplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>logoLogo.altform-unplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>logoLogo.altform-unplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>logoLogo.altform-unplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>logoLogo.altform-unplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.scale-100.png">
-      <PackagePath>logoLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.scale-125.png">
-      <PackagePath>logoLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.scale-150.png">
-      <PackagePath>logoLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.scale-200.png">
-      <PackagePath>logoLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.scale-400.png">
-      <PackagePath>logoLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.targetsize-16.png">
-      <PackagePath>logoLogo.targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.targetsize-24.png">
-      <PackagePath>logoLogo.targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.targetsize-256.png">
-      <PackagePath>logoLogo.targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.targetsize-32.png">
-      <PackagePath>logoLogo.targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoLogo.targetsize-48.png">
-      <PackagePath>logoLogo.targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoMediumTile.scale-100.png">
-      <PackagePath>logoMediumTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoMediumTile.scale-125.png">
-      <PackagePath>logoMediumTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoMediumTile.scale-150.png">
-      <PackagePath>logoMediumTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoMediumTile.scale-200.png">
-      <PackagePath>logoMediumTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoMediumTile.scale-400.png">
-      <PackagePath>logoMediumTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoSmallTile.scale-100.png">
-      <PackagePath>logoSmallTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoSmallTile.scale-125.png">
-      <PackagePath>logoSmallTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoSmallTile.scale-150.png">
-      <PackagePath>logoSmallTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoSmallTile.scale-200.png">
-      <PackagePath>logoSmallTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoSmallTile.scale-400.png">
-      <PackagePath>logoSmallTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoStoreLogo.scale-100.png">
-      <PackagePath>logoStoreLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoStoreLogo.scale-125.png">
-      <PackagePath>logoStoreLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoStoreLogo.scale-150.png">
-      <PackagePath>logoStoreLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoStoreLogo.scale-200.png">
-      <PackagePath>logoStoreLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoStoreLogo.scale-400.png">
-      <PackagePath>logoStoreLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoWideTile.scale-100.png">
-      <PackagePath>logoWideTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoWideTile.scale-125.png">
-      <PackagePath>logoWideTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoWideTile.scale-150.png">
-      <PackagePath>logoWideTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoWideTile.scale-200.png">
-      <PackagePath>logoWideTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logoWideTile.scale-400.png">
-      <PackagePath>logoWideTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_1.scale-100.png">
-      <PackagePath>logo_1.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo_original.scale-100.png">
-      <PackagePath>logo_original.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\reservaicon.scale-100.png">
-      <PackagePath>reservaicon.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\reservaicon.scale-125.png">
-      <PackagePath>reservaicon.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\reservaicon.scale-150.png">
-      <PackagePath>reservaicon.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\reservaicon.scale-200.png">
-      <PackagePath>reservaicon.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\reservaicon.scale-400.png">
-      <PackagePath>reservaicon.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\seta.scale-100.png">
-      <PackagePath>seta.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\suporteicon.scale-100.png">
-      <PackagePath>suporteicon.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\suporteicon.scale-125.png">
-      <PackagePath>suporteicon.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\suporteicon.scale-150.png">
-      <PackagePath>suporteicon.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\suporteicon.scale-200.png">
-      <PackagePath>suporteicon.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nicolas\Desktop\TCC-Mobile\s-pra-ver\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\suporteicon.scale-400.png">
-      <PackagePath>suporteicon.scale-400.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

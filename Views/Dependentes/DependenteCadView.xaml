@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TelaLogin.Views.Dependentes.DependenteCadView"
-             Title="Visitante/Colaborador">
+             Title="Cadastro Visitante">
     <StackLayout VerticalOptions="Center" Padding="20">
 
         <!-- Espaço para o logotipo -->
@@ -22,7 +22,7 @@
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="10" />
                 </Border.StrokeShape>
-                <Entry BackgroundColor="White" Text ="{Binding NomeDependenteDTO}" FontSize="14" HeightRequest="33" WidthRequest="350"/>
+                <Entry BackgroundColor="White" Text ="{Binding NomeDependenteDTO}" FontSize="14" HeightRequest="36" WidthRequest="350"/>
             </Border>
         </StackLayout>
 
@@ -40,7 +40,7 @@
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="10" />
                 </Border.StrokeShape>
-                <Entry  BackgroundColor="White" Text="{Binding CpfDependenteDTO}" FontSize="14" HeightRequest="33" />
+                <Entry  BackgroundColor="White" Text="{Binding CpfDependenteDTO}" FontSize="14" HeightRequest="36" />
             </Border>
         </StackLayout>
 
